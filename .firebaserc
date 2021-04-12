@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gestion-de-dispositivos": {
+      "hosting": {
+        "admin-example": [
+          "gestion-de-dispositivos"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "gestion de dispositivos": "gestion-de-dispositivos"
+  }
+}

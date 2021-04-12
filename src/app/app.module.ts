@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { ToggleDirective } from './dashboard/sidebar/toggle.directive';
-import { HomeComponent } from './page/home/home.component';
+import { HomeEntradaComponent } from './page/home-entrada/home-entrada.component';
 import { TableComponent } from './page/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -26,7 +26,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     AppComponent,
     SidebarComponent,
     ToggleDirective,
-    HomeComponent,
+    HomeEntradaComponent,
     TableComponent
   ],
   imports: [
