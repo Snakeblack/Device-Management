@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "admin-example"
+  "defaultProject": "admin-example",
+  "cli": {
+    "analytics": false
+  }
 }
