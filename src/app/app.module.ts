@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { ToggleDirective } from './dashboard/sidebar/toggle.directive';
 import { HomeEntradaComponent } from './page/home-entrada/home-entrada.component';
+import { HomeActualizarComponent } from './page/home-actualizar/home-actualizar.component';
 import { TableComponent } from './page/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -20,13 +21,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
+import { AngularFireModule } from '@angular/fire'
+import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ToggleDirective,
     HomeEntradaComponent,
+    HomeActualizarComponent,
     TableComponent
   ],
   imports: [
@@ -45,7 +48,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatNativeDateModule,
     MatRadioModule,
     MatTooltipModule,
-    MatRippleModule
+    MatRippleModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [{
     provide: LocationStrategy,

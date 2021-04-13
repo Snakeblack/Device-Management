@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "admin-example",
-      "public": "dist/admin-example",
+      "public": "src/index.html",
       "ignore": [
         "**/.*"
       ],
@@ -20,7 +20,7 @@
       "rewrites": [
         {
           "source": "**",
-          "destination": "/index.html"
+          "destination": "app/index.html"
         }
       ]
     }
