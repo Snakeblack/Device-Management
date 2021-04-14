@@ -13,17 +13,16 @@
     <!-- Breadcrumb Menu-->
     <div class="c-subheader-nav">
         <div class="btn-group" role="group">
-            <button mat-button matTooltip="Material Button" routerLink="home-entrada" routerLinkActive="c-active">Añadir</button>
-            <a class="btn" href="#" matTooltip="font awesome icon"><i class="fa fa-floppy-o"></i> Save</a>
-            <!-- https://coreui.io/docs/components/bootstrap/icons/#coreui-icons-free-502-icons -->
-            <a class="btn" href="#" matTooltip="coreui icon"><i class="cil-action-undo"></i> Cancel</a>
+            <button mat-button matTooltip="Añadir un dispositivo" routerLink="/home-entrada" routerLinkActive="c-active">Añadir</button>
+            <a class="btn" href="#" matTooltip="Guardar Formularios"><i class="fa fa-floppy-o"></i> Guardar</a>
+            <a class="btn" href="#" matTooltip="Cancelar formulario"><i class="cil-action-undo"></i> Cancelar</a>
         </div>
     </div>
 </div>
 <main class="c-main">
 
     <div class="container-fluid">
-        <mat-card class="mb-4" *ngFor="let item of [1,2,3,4,5,6]">
+        <mat-card class="mb-4" *ngFor="let item of [1,2,3,4,5,6]"> <!--*ngfor "let d of db.devices  {{d.name}}"-->
             <mat-card-header>
                 <mat-card-title>Card Title {{ item }}</mat-card-title>
                 <mat-card-subtitle>Subtitle</mat-card-subtitle>

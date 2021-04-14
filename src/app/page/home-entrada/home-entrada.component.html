@@ -13,26 +13,25 @@
     <!-- Breadcrumb Menu-->
     <div class="c-subheader-nav">
         <div class="btn-group" role="group">
-            <button mat-button matTooltip="Material Button" routerLink="home-actualizar" routerLinkActive="c-active">Actualizar</button>
-            <a class="btn" href="#" matTooltip="font awesome icon"><i class="fa fa-floppy-o"></i> Save</a>
-            <!-- https://coreui.io/docs/components/bootstrap/icons/#coreui-icons-free-502-icons -->
-            <a class="btn" href="#" matTooltip="coreui icon"><i class="cil-action-undo"></i> Cancel</a>
+            <button mat-button matTooltip="Actualizar dispositivos" routerLink="/home-actualizar" routerLinkActive="c-active">Actualizar</button>
+            <a class="btn" href="#" matTooltip="Guardar Formulario"><i class="fa fa-floppy-o"></i> Guardar</a>
+            <a class="btn" href="#" matTooltip="Cancelar formulario"><i class="cil-action-undo"></i> Cancelar</a>
         </div>
     </div>
 </div>
 <main class="c-main">
 
     <div class="container-fluid">
-        <mat-card class="mb-4" *ngFor="let item of [1,2,3,4,5,6]">
+        <mat-card class="mb-4">
             <mat-card-header>
-                <mat-card-title>Card Title {{ item }}</mat-card-title>
+                <mat-card-title>Formulario del dispositivo </mat-card-title>
                 <mat-card-subtitle>Subtitle</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
                 <div class="row">
                     <div class="col-sm">
                         <mat-form-field>
-                            <input matInput placeholder="First Name">
+                            <input matInput placeholder="Nombre del disposivo">
                         </mat-form-field>
                     </div>
 
