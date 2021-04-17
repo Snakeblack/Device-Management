@@ -6,9 +6,9 @@ import { AngularFirestore } from "@angular/fire/firestore";
 })
 export class DispositivoService {
 
-    dispositivosCollection;
-    dispositivos;
-    dispositivoDoc;
+    // dispositivosCollection;
+    // dispositivos;
+    // dispositivoDoc;
 
     constructor(db: AngularFirestore) {}
 }

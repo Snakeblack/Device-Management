@@ -24,20 +24,20 @@
     <div class="container-fluid">
         <mat-card class="mb-4" *ngFor="let item of [1,2,3,4,5,6]"> <!--*ngfor "let d of db.devices  {{d.name}}"-->
             <mat-card-header>
-                <mat-card-title>Card Title {{ item }}</mat-card-title>
-                <mat-card-subtitle>Subtitle</mat-card-subtitle>
+                <mat-card-title>Dispositivo {{ item }}</mat-card-title>
+                <!-- <mat-card-subtitle></mat-card-subtitle> -->
             </mat-card-header>
             <mat-card-content>
                 <div class="row">
                     <div class="col-sm">
                         <mat-form-field>
-                            <input matInput placeholder="First Name">
+                            <input matInput placeholder="Nombre del dispositivo">
                         </mat-form-field>
                     </div>
 
                     <div class="col-sm">
                         <mat-form-field>
-                            <input matInput placeholder="Last Name">
+                            <input matInput placeholder="Numero de serie">
                         </mat-form-field>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <mat-form-field>
-                            <mat-label>Choose a date</mat-label>
+                            <mat-label>Escoge la fecha</mat-label>
                             <input matInput [matDatepicker]="picker">
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
@@ -54,16 +54,15 @@
 
                     <div class="col-sm">
                         <mat-radio-group aria-label="Select an option">
-                            <mat-radio-button class="mt-4" value="1">Option 1</mat-radio-button>
-                            <mat-radio-button class="mt-4" value="2">Option 2</mat-radio-button>
+                            <mat-radio-button class="mt-4" value="1">Opcion 1</mat-radio-button>
+                            <mat-radio-button class="mt-4" value="2">Opcion 2</mat-radio-button>
                         </mat-radio-group>
                     </div>
                 </div>
             </mat-card-content>
 
             <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
+                <button mat-button>Insertar</button>
             </mat-card-actions>
         </mat-card>
     </div>

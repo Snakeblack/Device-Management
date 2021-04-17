@@ -25,7 +25,7 @@
         <mat-card class="mb-4">
             <mat-card-header>
                 <mat-card-title>Formulario del dispositivo </mat-card-title>
-                <mat-card-subtitle>Subtitle</mat-card-subtitle>
+                <!-- <mat-card-subtitle>Subtitle</mat-card-subtitle> -->
             </mat-card-header>
             <mat-card-content>
                 <div class="row">
@@ -37,7 +37,7 @@
 
                     <div class="col-sm">
                         <mat-form-field>
-                            <input matInput placeholder="Last Name">
+                            <input matInput placeholder="Numero de serie">
                         </mat-form-field>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <mat-form-field>
-                            <mat-label>Choose a date</mat-label>
+                            <mat-label>Escoge una fecha</mat-label>
                             <input matInput [matDatepicker]="picker">
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
@@ -54,16 +54,15 @@
 
                     <div class="col-sm">
                         <mat-radio-group aria-label="Select an option">
-                            <mat-radio-button class="mt-4" value="1">Option 1</mat-radio-button>
-                            <mat-radio-button class="mt-4" value="2">Option 2</mat-radio-button>
+                            <mat-radio-button class="mt-4" value="1">Opcion 1</mat-radio-button>
+                            <mat-radio-button class="mt-4" value="2">Opcion 2</mat-radio-button>
                         </mat-radio-group>
                     </div>
                 </div>
             </mat-card-content>
 
             <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
+                <button mat-button>Insertar</button>
             </mat-card-actions>
         </mat-card>
     </div>

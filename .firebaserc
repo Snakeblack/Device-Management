@@ -9,6 +9,7 @@
     }
   },
   "projects": {
-    "gestion de dispositivos": "gestion-de-dispositivos"
+    "gestion de dispositivos": "gestion-de-dispositivos",
+    "default": "gestion-de-dispositivos"
   }
 }

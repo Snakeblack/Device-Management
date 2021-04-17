@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+@mixin circle-animate($cir-color, $cir-size, $cir-speed, $cir-arc) {
+  & {
+    width: $cir-size;
+    height: $cir-size;
+    transform-origin: 20% center;
+    position: absolute;
+    animation: rotate $cir-speed linear infinite;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    height: $cir-size;
+    width: $cir-size;
+    background: $cir-color;
+    animation: rotate $cir-speed linear reverse infinite;
+  }
+}
+
+li:nth-of-type(1) {
+  @include circle-animate(RGBA(218, 93, 158, 1), 60px, 10s, 1px);
+}
+li:nth-of-type(2) {
+  @include circle-animate(RGBA(91, 147, 228, 0.6), 50px, 7s, 1px);
+}
+li:nth-of-type(3) {
+  @include circle-animate(RGBA(224, 116, 94, 0.75), 70px, 5s, 1px);
+}
+li:nth-of-type(4) {
+  @include circle-animate(RGBA(244, 229, 117, 0.5), 90px, 8s, 1px);
+}
+li:nth-of-type(5) {
+  @include circle-animate(RGBA(190, 209, 123, 0.5), 30px, 4s, 1px);
+}
+.notfound {
+  & h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+  & h2 {
+    margin: 5px;
+  }
+  & h1,
+  h2 {
+    text-align: center;
+    color: RGBA(45, 58, 64, 1);
+    text-shadow: RGBA(255, 255, 255, 0.75) 0 0 10px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+  }
+  width: 300px;
+  margin: 50px auto 0;
+  position: relative;
+}
+ul {
+  margin: -50px 0px 0px -36px;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+li {
+  list-style: none;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

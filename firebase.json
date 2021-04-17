@@ -1,28 +1,30 @@
 {
-  "hosting": [
-    {
-      "target": "admin-example",
-      "public": "src/index.html",
-      "ignore": [
-        "**/.*"
-      ],
-      "headers": [
+    "hosting": [
         {
-          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public,max-age=31536000,immutable"
-            }
-          ]
+            "target": "admin-example",
+            "public": "dist/admin-example",
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ],
+            "headers": [
+                {
+                    "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
+                    "headers": [
+                        {
+                            "key": "Cache-Control",
+                            "value": "public,max-age=31536000,immutable"
+                        }
+                    ]
+                }
+            ],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "destination": "app.component.html"
+                }
+            ]
         }
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "app/index.html"
-        }
-      ]
-    }
-  ]
+    ]
 }
